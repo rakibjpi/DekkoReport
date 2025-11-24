@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5-Year Work Anniversary Email Template</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .poster-container {
+      width: 720px;
+      min-height: 960px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #e0f2fe 0%, #f1f5f9 100%);
+      position: relative;
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+
+    .background-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.08;
+      z-index: 0;
+    }
+
+    .shape-1 {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(45deg, #1e3a8a, #14b8a6);
+      top: -100px;
+      right: -100px;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .shape-2 {
+      width: 400px;
+      height: 400px;
+      background: linear-gradient(45deg, #f59e0b, #fb923c);
+      bottom: -100px;
+      left: -100px;
+      animation: float 10s ease-in-out infinite reverse;
+    }
+
+    .email-card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 600px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin: 40px auto;
+      animation: slideIn 0.8s ease-out;
+    }
+
+    .email-banner {
+      background-image: url('https://media1.tenor.com/m/a9mW2JBdQP0AAAAd/flying-balloons.gif');
+      background-size: cover;
+      background-position: center;
+      padding: 40px 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      color: #880e78;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      animation: fadeInDown 1s ease-out;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding-left: 20px;
+    }
+
+    .banner-subtitle {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      color: #330ec4;
+      animation: fadeInUp 1s ease-out 0.3s both;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .banner-icon {
+      font-size: 40px;
+      color: #fbbf24;
+      margin-bottom: 15px;
+      animation: bounce 2s ease-in-out infinite;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .employee-info {
+      margin-top: 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-out 0.6s both;
+    }
+
+    .employee-avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 12px;
+    }
+
+    .employee-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: #330ec4;
+      font-size: 22px;
+      margin-bottom: 4px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .employee-designation {
+      font-size: 16px;
+      color: #330ec4;
+      opacity: 0.9;
+    }
+
+    .email-body {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .material-icons {
+      font-size: 22px;
+      color: #f59e0b;
+    }
+
+    .email-content {
+      font-size: 16px;
+      color: #334155;
+      line-height: 1.7;
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+      color: #92400e;
+    }
+
+    .email-footer {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 2px solid #e2e8f0;
+    }
+
+    .signature {
+      font-style: italic;
+      color: #64748b;
+    }
+
+    .company-name {
+      font-weight: 600;
+      color: #1e3a8a;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+      color: #ffffff;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 auto 20px;
+      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+      position: relative;
+      z-index: 2;
+      animation: zoomIn 0.8s ease-out;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .badge-number {
+      font-size: 42px;
+      line-height: 1;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Animations Used */
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table class="poster-container" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div class="background-shape shape-1"></div>
+        <div class="background-shape shape-2"></div>
+
+        <table class="email-card" cellpadding="0" cellspacing="0" align="center">
+          <tr>
+            <td>
+              <table class="email-banner" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <div class="banner-content">
+                      <div class="badge">
+                        <span class="badge-number">5</span>
+                      </div>
+
+                      <div class="banner-title">Work Anniversary</div>
+                      <div class="banner-subtitle">Celebrating Your Milestone Achievement</div>
+                      <!-- Avatar + Name + Designation -->
+                      <div class="employee-info">
+                        <img class="employee-avatar" src="https://i.pravatar.cc/150?img=12" alt="Employee Avatar">
+                        <div class="employee-name">Nayon Islam</div>
+                        <div class="employee-designation">Software Engineer</div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="email-body" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <div class="email-content">
+                      Dear Nayon Islam,
+                    </div>
+
+                    <div class="email-content">
+                      Congratulations on your
+                      <span class="highlight">5-year work anniversary</span> with Dekko Designs Limited!
+                      Your dedication and contributions have been invaluable.
+                    </div>
+
+                    <div class="email-content">
+                      Your positive impact and commitment to excellence continue to help drive the success of our team.
+                      We look forward to achieving many more milestones together.
+                    </div>
+
+                    <div class="email-footer">
+                      <div class="email-content">
+                        With sincere appreciation and best wishes,<br><br>
+                        <span class="signature">Rakibul Islam</span><br>
+                        <span class="signature">Manager-HRIS</span><br>
+                        <span class="company-name">Dekko Designs Limited</span>
+                      </div>
+                    </div>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
